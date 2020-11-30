@@ -7,9 +7,14 @@ const creteStore = () => {
       message: 'hello vuex!'
     }
   },
+  // mutations: {
+  //   updateMessage: function(state){
+  //     state.message= 'Update!'
+  //   }
+  // }
   mutations: {
-    updateMessage: function(state){
-      state.message= 'Update!'
+    updateMessage: function(state, payload){
+      state.message = payload
     }
   }
   })
