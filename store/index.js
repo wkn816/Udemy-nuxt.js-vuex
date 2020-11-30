@@ -6,6 +6,11 @@ const creteStore = () => {
     return{
       message: 'hello vuex!'
     }
+  },
+  mutations: {
+    updateMessage: function(state){
+      state.message= 'Update!'
+    }
   }
   })
 }
